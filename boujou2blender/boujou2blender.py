@@ -196,17 +196,3 @@ class SlideshowAddSlide(bpy.types.Operator, ExportHelper):
             print(filepath)
             runCode(filepath)
         return {'FINISHED'}
-
-def register():
-    bpy.utils.register_class(SlideshowAddSlide)
-
-
-def unregister():
-    bpy.utils.unregister_class(SlideshowAddSlide)
-
-
-if __name__ == "__main__":
-    register()
-
-    # test call
-    bpy.ops.slideshow.add_slide('INVOKE_DEFAULT')
