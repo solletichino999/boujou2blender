@@ -170,7 +170,7 @@ def runCode(textFileName):
     cam, cam_obj = camera_setup(filmback, camera_data)
 
     print ('############################################################################################')
-    print ('###########################Boujou 5 to Blender 2.80 importer################################')
+    print ('###########################Boujou 5 to Blender 2.93 importer################################')
     print ('############################################################################################')    
 
 
@@ -178,11 +178,11 @@ def runCode(textFileName):
 class SlideshowAddSlide(bpy.types.Operator, ExportHelper):
     bl_idname = "slideshow.add_slide"
     bl_label = "Import Boujou Txt File"
-    files = CollectionProperty(
+    files: CollectionProperty(
             name="File Path",
             type=OperatorFileListElement,
             )
-    directory = StringProperty(
+    directory: StringProperty(
             subtype='DIR_PATH',
             )
 
