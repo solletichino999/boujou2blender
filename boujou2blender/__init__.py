@@ -7,7 +7,7 @@ bl_info = {
     "blender": (2, 93, 0),
     "location": "File > Import > Boujou",
     "url": "https://github.com/solletichino999/boujou2blender",
-    "wiki_url": "https://github.com/solletichino999/boujou2blender",
+    "doc_url": "https://github.com/solletichino999/boujou2blender",
     "tracker_url": "https://github.com/solletichino999/boujou2blender/issues",
     "category": "Import-Export"
 }
