@@ -178,6 +178,7 @@ def runCode(textFileName):
 class SlideshowAddSlide(bpy.types.Operator, ExportHelper):
     bl_idname = "slideshow.add_slide"
     bl_label = "Import Boujou Txt File"
+    bl_options = {'REGISTER', 'UNDO'}
     files: CollectionProperty(
             name="File Path",
             type=OperatorFileListElement,
